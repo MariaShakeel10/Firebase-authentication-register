@@ -107,8 +107,8 @@
 </head>
 
 <body>
-     <!-- nav -->
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -148,7 +148,7 @@
         <div class="d-flex justify-content-center align-items-center my-5 m-auto">
             <div class="card bg-border" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title text-center black-color white-bg">Login</h5>
+                    <h5 class="card-title text-center black-color white-bg">SignUp</h5>
                     <div class="mb-3">
                         <p class="white-bg black-color">Email</p>
                         <input type="text" class="form-control" placeholder="Email Id" id="email" aria-label="Username">
@@ -158,25 +158,35 @@
                         <input type="password" class="form-control" placeholder="Password" id="password"
                             aria-label="Password">
                     </div>
-                  
                     <div class="mb-3">
-                        <button class="text-center white-bg black-color btn btn-outline-dark" id="login">Login</button>
+                        <p class="white-bg black-color">Phone No.</p>
+                        <input type="number" class="form-control" placeholder="Phone No." id="phone-no."
+                            aria-label="Password">
                     </div>
-                    <p class="white-bg black-color">Don't have an account? <a href="./signup.html"
-                        class="sign">SignUp</a>.</p>
+                    <div class="mb-3">
+                        <button class="text-center white-bg black-color btn btn-outline-dark"
+                            id="google">SignUp with google</button>
+                    </div>
+                    <div class="mb-3">
+                        <button class="text-center white-bg black-color btn btn-outline-dark"
+                            id="signUp">SignUp</button>
+                    </div>
+                    <p class="white-bg black-color">Already have an account? <a href="./login.html"
+                            class="sign">Login</a>.</p>
                 </div>
             </div>
         </div>
     </div>
-   
-   <!-- Bootstrap JS -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="firebase.js"></script>
-    <script type="module" src="login.js"></script>
+    <script type="module" src="signup.js"></script>
+
 </body>
 
 </html>
